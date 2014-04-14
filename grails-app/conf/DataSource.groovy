@@ -21,13 +21,13 @@ environments {
     }
     test {
         dataSource {
-            dbCreate = "update"
+            dbCreate = "create-drop"
             url = "jdbc:postgresql://localhost:5432/_test_vacuum"
         }
     }
     production {
         dataSource {
-            dbCreate = "update"
+            dbCreate = "create-drop"
             url = "jdbc:postgresql://localhost:5432/_test_vacuum"
         }
     }

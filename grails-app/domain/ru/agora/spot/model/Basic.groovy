@@ -1,4 +1,4 @@
-package com.hz6.stuff
+package ru.agora.spot.model
 
 class Basic {
 
@@ -9,6 +9,6 @@ class Basic {
     }
 
     static constraints = {
-        id generator: 'uuid2'
+        id generator: 'uuid2', length: 36
     }
 }

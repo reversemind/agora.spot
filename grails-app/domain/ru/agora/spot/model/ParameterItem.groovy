@@ -1,13 +1,8 @@
-package com.hz6.stuff
+package ru.agora.spot.model
 
-import org.hibernate.Hibernate
+class ParameterItem extends Basic{
 
-import java.sql.Blob
-import java.sql.SQLException
-
-class ParameterItem {
-
-    UUID id
+//    UUID id
     String name
     String value
     String type

@@ -1,6 +1,6 @@
 package com.hz6.stuff.sample3
 
-import com.hz6.stuff.Basic
+import ru.agora.spot.model.Basic
 
 class User3 extends Basic {
 

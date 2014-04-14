@@ -1,8 +1,8 @@
-package com.hz6.stuff
+package ru.agora.spot.model
 
-class Parameter {
+class Parameter extends Basic{
 
-    UUID id
+//    UUID id
     String title
 
     static hasMany = [parametrItems: ParameterItem]

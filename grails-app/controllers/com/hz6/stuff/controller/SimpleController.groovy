@@ -1,8 +1,8 @@
 package com.hz6.stuff.controller
 
-import com.hz6.stuff.Parameter
-import com.hz6.stuff.ParameterItem
-import com.hz6.stuff.Stuff
+import ru.agora.spot.model.Parameter
+import ru.agora.spot.model.ParameterItem
+import ru.agora.spot.model.Stuff
 import com.hz6.stuff.sample.User1
 import com.hz6.stuff.sample.UserGroup1
 import com.hz6.stuff.sample4.UserGroup4
