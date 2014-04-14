@@ -3,9 +3,9 @@ package ru.agora.spot.model
 /**
  *
  */
-class Brand extends Basic{
+class Brand{
 
-//    UUID id
+    UUID id
     String name
 
     static mapping = {
