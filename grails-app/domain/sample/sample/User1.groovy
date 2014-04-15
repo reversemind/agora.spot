@@ -1,8 +1,8 @@
-package com.hz6.stuff.sample
+package sample.sample
 
-import ru.agora.spot.model.Basic
+import ru.agora.spot.model.common.Base
 
-class User1 extends Basic {
+class User1 extends Base {
 
     String title
 

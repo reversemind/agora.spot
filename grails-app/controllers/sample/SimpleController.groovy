@@ -1,11 +1,11 @@
-package com.hz6.stuff.controller
+package sample
 
 import ru.agora.spot.model.Parameter
 import ru.agora.spot.model.ParameterItem
 import ru.agora.spot.model.Stuff
-import com.hz6.stuff.sample.User1
-import com.hz6.stuff.sample.UserGroup1
-import com.hz6.stuff.sample4.UserGroup4
+import sample.sample.User1
+import sample.sample.UserGroup1
+import sample.sample4.UserGroup4
 
 class SimpleController {
 
