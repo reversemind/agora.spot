@@ -5,6 +5,7 @@ import ru.agora.spot.model.common.Base
 
 class SaleItem extends Base{
 
+    Sale sale
     Stuff stuff
     Integer count
 
