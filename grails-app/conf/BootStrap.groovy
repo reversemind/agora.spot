@@ -29,6 +29,7 @@ class BootStrap {
         println "parameterColor:" + parameterColor
 
 
+
         // Stuff
         def stuff = new Stuff(title: "T-shirt", price: new Double(0.0d));
 
