@@ -63,8 +63,8 @@ class SaleItemController {
         if (version != null) {
             if (saleItemInstance.version > version) {
                 saleItemInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
-                          [message(code: 'saleItem.label', default: 'SaleItem')] as Object[],
-                          "Another user has updated this SaleItem while you were editing")
+                        [message(code: 'saleItem.label', default: 'SaleItem')] as Object[],
+                        "Another user has updated this SaleItem while you were editing")
                 render(view: "edit", model: [saleItemInstance: saleItemInstance])
                 return
             }

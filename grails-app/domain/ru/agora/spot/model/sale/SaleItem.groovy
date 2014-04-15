@@ -6,7 +6,7 @@ import ru.agora.spot.model.common.Base
 class SaleItem extends Base{
 
     Stuff stuff
-    Integer count = 1
+    Integer count
 
     static hasOne = [sale: Sale]
 
@@ -19,6 +19,11 @@ class SaleItem extends Base{
         sale nullable: false
         stuff nullable: false
         count nullable: false
+    }
+
+    public SaleItem() {
+        this.stuff = null
+        this.count = 0
     }
 
     public SaleItem(Stuff stuff, Integer count) {

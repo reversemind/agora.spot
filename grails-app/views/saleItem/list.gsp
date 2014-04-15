@@ -28,6 +28,8 @@
 					
 						<th><g:message code="saleItem.stuff.label" default="Stuff" /></th>
 					
+						<g:sortableColumn property="count" title="${message(code: 'saleItem.count.label', default: 'Count')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -37,6 +39,8 @@
 						<td><g:link action="show" id="${saleItemInstance.id}">${fieldValue(bean: saleItemInstance, field: "sale")}</g:link></td>
 					
 						<td>${fieldValue(bean: saleItemInstance, field: "stuff")}</td>
+					
+						<td>${fieldValue(bean: saleItemInstance, field: "count")}</td>
 					
 					</tr>
 				</g:each>

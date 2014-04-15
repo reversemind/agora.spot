@@ -18,3 +18,11 @@
 	<g:select id="stuff" name="stuff.id" from="${ru.agora.spot.model.Stuff.list()}" optionKey="id" required="" value="${saleItemInstance?.stuff?.id}" class="many-to-one"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: saleItemInstance, field: 'count', 'error')} required">
+	<label for="count">
+		<g:message code="saleItem.count.label" default="Count" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="count" type="number" value="${saleItemInstance.count}" required=""/>
+</div>
+

@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${saleItemInstance?.count}">
+				<li class="fieldcontain">
+					<span id="count-label" class="property-label"><g:message code="saleItem.count.label" default="Count" /></span>
+					
+						<span class="property-value" aria-labelledby="count-label"><g:fieldValue bean="${saleItemInstance}" field="count"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
