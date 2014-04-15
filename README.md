@@ -1,5 +1,5 @@
 agora.spot
 ==========
 
-agora.spot - test grails project
+agora.spot - test grails projectk
 
