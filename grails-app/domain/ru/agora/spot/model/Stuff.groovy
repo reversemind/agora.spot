@@ -26,11 +26,18 @@ class Stuff extends Base {
         parameters nullable: true
     }
 
+    public Stuff() {
+        this.title = null
+        this.brand = null
+        this.price = 0.0d
+        this.parameters = new HashSet<Parameter>();
+    }
+
     public Stuff(String title, Brand brand, Double price, Set<Parameter> parameters) {
         this.title = title
         this.brand = brand
         this.price = price
-        this.parameters = parameters
+        this.parameters = new HashSet<Parameter>();
     }
 
     public Stuff(String title, Brand brand, Double price) {
