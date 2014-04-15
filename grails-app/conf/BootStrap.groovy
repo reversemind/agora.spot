@@ -1,6 +1,8 @@
 import ru.agora.spot.model.Parameter
 import ru.agora.spot.model.ParameterItem
 import ru.agora.spot.model.Stuff
+import ru.agora.spot.model.customer.Role
+import ru.agora.spot.model.customer.User
 
 class BootStrap {
 
@@ -40,6 +42,14 @@ class BootStrap {
         stuff.getParameters().add(parameterSize)
 
         stuff.save(flush: true, failOnError: true)
+
+
+        // User
+        def role = new Role(name: "ADMIN")
+        def user = new User(name: "Kate", password: "123")
+        user.getRoles().add(role);
+        user.save(flush: true, failOnError: true)
+
     }
     def destroy = {
     }

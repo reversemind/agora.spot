@@ -21,5 +21,39 @@ class User extends Base{
         roles nullable: false
     }
 
+    User() {
+        this.name = null
+        this.password = null
+        this.roles = new HashSet<Role>()
+    }
 
+    User(String name, String password) {
+        this.name = name
+        this.password = password
+        this.roles = new HashSet<Role>()
+    }
+
+    User(String name, String password, Set<Role> roles) {
+        this.name = name
+        this.password = password
+        this.roles = roles
+    }
+
+    User(UUID id, String name, String password, Set<Role> roles) {
+        super(id)
+        this.name = name
+        this.password = password
+        this.roles = roles
+    }
+
+    @Override
+    public String toString() {
+        return "name:" + name;
+
+//        return "User{" +
+//                "name='" + name + '\'' +
+//                ", password='" + password + '\'' +
+//                ", roles=" + roles +
+//                '}';
+    }
 }

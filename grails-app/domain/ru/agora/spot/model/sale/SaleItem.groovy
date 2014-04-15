@@ -32,6 +32,14 @@ class SaleItem extends Base{
         this.count = count
     }
 
+    Integer getCount() {
+        return count
+    }
+
+    void setCount(Integer count) {
+        this.count = count
+    }
+
     @Override
     public String toString() {
         return "SaleItem{" +

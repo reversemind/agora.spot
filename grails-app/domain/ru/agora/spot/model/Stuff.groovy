@@ -75,12 +75,14 @@ class Stuff extends Base {
 
     @Override
     public String toString() {
-        return "Stuff{" +
-                " id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", brand=" + brand +
-                ", price=" + price +
-                ", parameters=" + parameters +
-                '}';
+        return " id='" + id + "', title='" + title + "'";
+
+//        return "Stuff{" +
+//                " id='" + id + '\'' +
+//                ", title='" + title + '\'' +
+//                ", brand=" + brand +
+//                ", price=" + price +
+//                ", parameters=" + parameters +
+//                '}';
     }
 }

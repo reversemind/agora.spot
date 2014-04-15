@@ -8,7 +8,6 @@ import ru.agora.spot.model.customer.User
  */
 class Parameter extends Base{
 
-    User user
     String title
     Set<ParameterItem> parameterItems
 
